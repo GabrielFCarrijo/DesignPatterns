@@ -1,8 +1,10 @@
 package org.padroes.designPatterns.imposto;
 
-public enum TipoImposto {
+import org.padroes.designPatterns.orcamento.Orcamento;
 
+import java.math.BigDecimal;
 
-    ICMS,
-    ISS
+public interface TipoImposto {
+
+   BigDecimal calcular(Orcamento orcamento);
 }
